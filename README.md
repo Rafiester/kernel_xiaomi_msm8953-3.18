@@ -6,6 +6,7 @@
 ```
 ten-lto: Current stable released with LTO Support
 staging: Current staging branch (in-progress branch)
+```
 
 ## About device
 ![mido](https://telegra.ph/file/25b0b8281d57ad3d175b9.jpg)
@@ -16,10 +17,12 @@ Device codename - mido
 Release date - January, 2017
 Release version - 6.0.1 
 Current version - 7.0.0 
-
+```
 *Full specifications - [GSM Arena](https://www.gsmarena.com/xiaomi_redmi_note_4x-8580.php)*
 
 ## Features 
+As of 17-04-2020: Latest Release
+```
 - Based On Latest CAF Kernel Tag LA.UM.8.6.r1-04200-89xx.0
 - Up-to-date for aosp common kernel 3.18 (https://https://source.codeaurora.org/quic/la/kernel/msm-3.18)
 - Up-to-date for f2fs stable branch (https://github.com/jaegeuk/f2fs-stable)
@@ -50,6 +53,7 @@ Current version - 7.0.0
 - Adreno Boost
 - Adreno Idler
 - And Many More Shit There
+```
 
 ## Download build
 [![Download PureCAFx Kernel](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/purecafx-kernel/files/mido/)
@@ -58,3 +62,4 @@ Current version - 7.0.0
 [Telegram](https://t.me/AvariceCI)
 
 # Avarice Project X || 2019 - 2020
+
