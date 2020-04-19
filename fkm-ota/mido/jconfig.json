@@ -1,0 +1,13 @@
+{
+  "kernel": {
+    "name": "PureCAFx Kernel",
+    "version": "Stable",
+    "link": "https://sourceforge.net/projects/purecafx-kernel/files/mido/PureCAFx-mido-20200417.zip/download",
+    "changelog_url": "https://raw.githubusercontent.com/Rafiester/kernel_xiaomi_msm8953-3.18/readme/fkm-ota/mido/changelog.txt",
+    "date": "2020-04-17",
+    "sha1": "b963dba8fe862dfdf0d9cd2da3a34f6d2a597c37"
+  },
+  "support": {
+    "link": "https://t.me/AvariceCI"
+  }
+}
