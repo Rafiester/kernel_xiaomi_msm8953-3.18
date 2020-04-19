@@ -59,7 +59,7 @@ As of 17-04-2020: Latest Release
 [![Download PureCAFx Kernel](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/purecafx-kernel/files/mido/)
 
 ## Telegram Channel
-[Telegram](https://t.me/AvariceCI)
+[![Telegram Support](https://telegra.ph/file/eb84cccb296f8cc72a32e.png)](https://t.me/AvariceCI)
 
 # Avarice Project X || 2019 - 2020
 
