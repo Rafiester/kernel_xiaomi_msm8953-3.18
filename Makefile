@@ -625,39 +625,19 @@ KBUILD_CFLAGS	+= $(call cc-disable-warning, format-truncation)
 KBUILD_CFLAGS	+= $(call cc-disable-warning, address-of-packed-member)
 KBUILD_CFLAGS	+= $(call cc-disable-warning, attribute-alias)
 
-ifeq ($(cc-name),gcc)
-KBUILD_CFLAGS	+= -Wno-psabi
-endif
-
-## hide "error: cast to smaller integer type 'eSapStatus' from 'void *' "
-KBUILD_CFLAGS	+= $(call cc-disable-warning, pointer-to-int-cast)
-
-## hide "warning: integer-overflow in expression"
-KBUILD_CFLAGS	+= $(call cc-disable-warning, integer-overflow)
-
 ifdef CONFIG_CC_OPTIMIZE_FOR_SIZE
 KBUILD_CFLAGS	+= $(call cc-option,-Oz,-Os)
 else
 ifeq ($(cc-name),clang)
 KBUILD_CFLAGS	+= -O3 $(call cc-option,-fsanitize=local-init) -march=armv8-a -mtune=cortex-a53 -mcpu=cortex-a53
 else
-KBUILD_CFLAGS	+= -O3
+KBUILD_CFLAGS	+= -O2
 endif
 endif
 
 ifdef CONFIG_CC_WERROR
 KBUILD_CFLAGS	+= -Werror
 endif
-
-KBUILD_CFLAGS += $(call cc-ifversion, -gt, 0900, \
-			$(call cc-option, -Wno-psabi) \
-			$(call cc-disable-warning,maybe-uninitialized,) \
-			$(call cc-disable-warning,format,) \
-			$(call cc-disable-warning,array-bounds,) \
-			$(call cc-disable-warning,stringop-overflow,))
-
-KBUILD_CFLAGS += $(call cc-ifversion, -lt, 0409, \
-			$(call cc-disable-warning,maybe-uninitialized,))
 
 # Tell gcc to never replace conditional load with a non-conditional one
 KBUILD_CFLAGS	+= $(call cc-option,--param=allow-store-data-races=0)
@@ -824,6 +804,9 @@ KBUILD_CFLAGS	+= $(call cc-option,-fmerge-constants)
 
 # Make sure -fstack-check isn't enabled (like gentoo apparently did)
 KBUILD_CFLAGS  += $(call cc-option,-fno-stack-check,)
+
+# conserve stack if available
+KBUILD_CFLAGS   += $(call cc-option,-fconserve-stack)
 
 # disallow errors like 'EXPORT_GPL(foo);' with missing header
 KBUILD_CFLAGS   += $(call cc-option,-Werror=implicit-int)
