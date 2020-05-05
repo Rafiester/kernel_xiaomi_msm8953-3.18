@@ -1,4 +1,4 @@
-# PureCAFx-Kernel (msm8953) source
+# PureCAFx-Kernel (msm8953-3.18) source
 
 ![logo](https://telegra.ph/file/7907aaef71619d609160e.png)
 
