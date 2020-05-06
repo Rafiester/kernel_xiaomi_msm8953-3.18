@@ -1,28 +1,12 @@
-PureCAFx - Release Date 17-04-2020
+PureCAFx - Release Date 06-05-2020
 
-- Switch to LTO And LLVM Optimizations
-- Merged Latest CAF LA.UM.8.6.r1-04200-89xx.0
-- Merged Latest Linux Common Kernel (17-March-2020)
-- Added Boeffla Wakelock Blocker Again to Prevent some wakelock issue
-- Added Unwanted files blocker (No More Fde.ai,NFS and etc).
-- Added Several Optimization from @KernelToast
-- Added Backlight Dimmer Option Support
-- Added Power Effiecient working queues support
-- Added Sociopath and Agilesd And Tune some TCP 
-- Added support for optimized inlining  
-- Power on display asynchronously as early as possible
-- Reduce display commit latency caused by deep CPU idle
-- Disable GFS for better UI performance
-- MSM Thermal Optimization
-- Disable touchboost by default on msm_performance  
-- Improved Scheduler and make more efficient
-- Improved MbCache 
-- Improved Undeclock Frequency
-- Improved Latest ION Optimization 
-- Remove DTS Eagle Supports
-- Switch to 100 HZ Kernel tick rates
-- Updated WireGuard to 2020-03-18
-- F2FS Rapid GC Updates
-- Disable more debugfs and log
-- Other improvements under the hood
-
+- Merge ASB-2020-04-05_3.18
+- Merge CAF & Prima LA.UM.8.6.r1-04300-89xx.0
+- Merge Wireguard to 1.0.20200429 
+- Remove Almost all tracing and debugfs
+- Don't allocate memory dynamically in load_elf_binary 
+- Dont boost devfreq on cold app launches
+- Add IRQ and kthread as performance critical improvement
+- Merge Some Latest KernelToast Optimization
+- Fixed Frequency cant stay on 400mhz 
+- Ext4 Optimization
