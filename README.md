@@ -4,9 +4,9 @@
 
 ## Branches and informaton
 ```
-ten-lto   : Current stable released with LTO Support
+ten-uc    : Current stable released with Underclock frequency
+ten-nonuc : Current stable released without Underclock frequency
 ten-inline: Current branch for inlined with rom (Without LTO)
-staging   : Current staging branch (in-progress branch)
 
 ```
 
